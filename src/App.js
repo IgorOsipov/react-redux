@@ -1,5 +1,8 @@
 import './App.css';
 import { Col, Container, Row } from 'react-bootstrap';
+import PostForm from './components/PostForm';
+import Posts from './components/Posts';
+import FetchedPosts from './components/FetchedPosts';
 
 function App() {
   return (
@@ -7,16 +10,18 @@ function App() {
       <Container className="pt-3">
         <Row>
           <Col>
-            Form
+            <PostForm />
           </Col>
         </Row>
         <Row>
           <Col>
-            Posts
-            </Col>
+            <h2>Синхронные посты</h2>
+            <Posts posts={[]} />
+          </Col>
           <Col>
-            Fetched posts
-            </Col>
+            <h2>Ассинхронные посты</h2>
+            <FetchedPosts posts={[]}/>
+          </Col>
         </Row>
 
       </Container>
