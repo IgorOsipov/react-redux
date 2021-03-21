@@ -16,7 +16,7 @@ function App() {
         <Row>
           <Col>
             <h2>Синхронные посты</h2>
-            <Posts posts={[]} />
+            <Posts posts={["1", "2", "3"]} />
           </Col>
           <Col>
             <h2>Ассинхронные посты</h2>

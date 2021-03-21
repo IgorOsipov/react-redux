@@ -1,9 +1,15 @@
+import { Button } from 'react-bootstrap';
 import React from 'react';
 
-export default function FetchedPosts (){
+export default function FetchedPosts ({posts}){
+   
+    if(!posts.lenght){
+        
+    }
+    
     return (
         <div>
-            <h1>Fetched Posts</h1>
+            <Button variant="primary">Добавить пост</Button>
         </div>
     )
 }
