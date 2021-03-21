@@ -4,6 +4,7 @@ import PostForm from './components/PostForm';
 import Posts from './components/Posts';
 import FetchedPosts from './components/FetchedPosts';
 
+
 function App() {
   return (
     <div className="App">
@@ -16,14 +17,15 @@ function App() {
         <Row>
           <Col>
             <h2>Синхронные посты</h2>
-            <Posts posts={["1", "2", "3"]} />
+            <Row>
+              <Posts style posts={["1", "2", "3"]} />
+            </Row>
           </Col>
           <Col>
             <h2>Ассинхронные посты</h2>
             <FetchedPosts posts={[]}/>
           </Col>
         </Row>
-
       </Container>
     </div>
   );
