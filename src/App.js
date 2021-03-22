@@ -18,7 +18,7 @@ function App() {
           <Col>
             <h2>Синхронные посты</h2>
             <Row>
-              <Posts style posts={["1", "2", "3"]} />
+              <Posts />
             </Row>
           </Col>
           <Col>

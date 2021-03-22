@@ -13,7 +13,7 @@ export default function Post({post}) {
             <Styles>
                 <Card>
                     <Card.Body>
-                        <Card.Title>Title {post}</Card.Title>
+                        <Card.Title>{post.title}</Card.Title>
                         <Card.Text>
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
