@@ -23,7 +23,7 @@ function App() {
           </Col>
           <Col>
             <h2>Ассинхронные посты</h2>
-            <FetchedPosts posts={[]}/>
+            <FetchedPosts />
           </Col>
         </Row>
       </Container>
