@@ -40,8 +40,8 @@ export function hideAlert(){
 
 export function fetchPosts(){
     return async dispatch => {
+        dispatch(showLoader())
         try{
-            dispatch(showLoader())
             const responce = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=5');
             const json = await responce.json();
             dispatch({type: FETCH_POSTS, payload: json})
